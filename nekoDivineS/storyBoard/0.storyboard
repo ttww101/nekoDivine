@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Neko View Controller-->
+        <scene sceneID="sQa-xy-bcT">
+            <objects>
+                <viewController storyboardIdentifier="0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rk0-gS-Vrw" customClass="NekoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QUY-Kd-bl1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-nq-q5T">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_neko1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gw1-zP-0bE">
+                                <rect key="frame" x="0.0" y="-133" width="600" height="753.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gw1-zP-0bE" secondAttribute="height" multiplier="1242:1560" id="phX-15-n6P"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzk-DM-xQl">
+                                <rect key="frame" x="202" y="515" width="196" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yzk-DM-xQl" secondAttribute="height" multiplier="603:231" id="3uJ-zc-yUG"/>
+                                </constraints>
+                                <state key="normal" image="gacya_btn.png"/>
+                                <connections>
+                                    <action selector="gacyaStart:" destination="Rk0-gS-Vrw" eventType="touchDown" id="3Td-Hr-R7j"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZzW-lv-9mn">
+                                <rect key="frame" x="562" y="30" width="28" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZzW-lv-9mn" secondAttribute="height" multiplier="109:155" id="zKk-Kz-R5L"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="7iJ-QQ-Zp4" userLabel="gacya_coin2.png">
+                                <rect key="frame" x="523.5" y="30" width="28.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7iJ-QQ-Zp4" secondAttribute="height" multiplier="109:155" id="lvj-AC-Vd3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="W1l-Yw-LIK" userLabel="gacya_coin3.png">
+                                <rect key="frame" x="485.5" y="30" width="28" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacya_flag1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-uv-Rh7">
+                                <rect key="frame" x="232.5" y="-253" width="135" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aCw-uv-Rh7" secondAttribute="height" multiplier="760:676" id="Sks-ch-Sd5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ubi-7o-pzj" firstAttribute="trailing" secondItem="gw1-zP-0bE" secondAttribute="trailing" id="5LW-me-Rvw"/>
+                            <constraint firstItem="ubi-7o-pzj" firstAttribute="bottom" secondItem="yzk-DM-xQl" secondAttribute="bottom" constant="10" id="7R8-VA-3vc"/>
+                            <constraint firstItem="7iJ-QQ-Zp4" firstAttribute="height" secondItem="QUY-Kd-bl1" secondAttribute="height" multiplier="1:15" id="9SR-qL-7Sg"/>
+                            <constraint firstItem="ZzW-lv-9mn" firstAttribute="height" secondItem="QUY-Kd-bl1" secondAttribute="height" multiplier="1:15" id="CBw-Vh-5wg"/>
+                            <constraint firstItem="W1l-Yw-LIK" firstAttribute="top" secondItem="ubi-7o-pzj" secondAttribute="top" constant="10" id="CjN-Tt-959"/>
+                            <constraint firstItem="gw1-zP-0bE" firstAttribute="bottom" secondItem="ubi-7o-pzj" secondAttribute="bottom" constant="20.5" id="Cqh-Lu-AaB"/>
+                            <constraint firstItem="gw1-zP-0bE" firstAttribute="leading" secondItem="ubi-7o-pzj" secondAttribute="leading" id="Dmj-u9-acd"/>
+                            <constraint firstItem="W1l-Yw-LIK" firstAttribute="width" secondItem="W1l-Yw-LIK" secondAttribute="height" multiplier="109:155" id="E8U-GJ-NqC"/>
+                            <constraint firstItem="7iJ-QQ-Zp4" firstAttribute="leading" secondItem="W1l-Yw-LIK" secondAttribute="trailing" constant="10" id="MtL-kL-bcd"/>
+                            <constraint firstItem="W1l-Yw-LIK" firstAttribute="height" secondItem="QUY-Kd-bl1" secondAttribute="height" multiplier="1:15" id="OWn-Se-4Lu"/>
+                            <constraint firstItem="ubi-7o-pzj" firstAttribute="trailing" secondItem="1Kq-nq-q5T" secondAttribute="trailing" id="Ohh-8r-ezY"/>
+                            <constraint firstItem="ZzW-lv-9mn" firstAttribute="leading" secondItem="7iJ-QQ-Zp4" secondAttribute="trailing" constant="10" id="Ps8-cT-QAK"/>
+                            <constraint firstItem="yzk-DM-xQl" firstAttribute="centerX" secondItem="ubi-7o-pzj" secondAttribute="centerX" id="Xb4-3M-dEf"/>
+                            <constraint firstItem="yzk-DM-xQl" firstAttribute="height" secondItem="QUY-Kd-bl1" secondAttribute="height" multiplier="1:8" id="ZEv-AY-yJq"/>
+                            <constraint firstItem="aCw-uv-Rh7" firstAttribute="centerX" secondItem="ubi-7o-pzj" secondAttribute="centerX" id="abe-nr-UcJ"/>
+                            <constraint firstItem="ZzW-lv-9mn" firstAttribute="top" secondItem="ubi-7o-pzj" secondAttribute="top" constant="10" id="beC-M0-tkc"/>
+                            <constraint firstItem="ubi-7o-pzj" firstAttribute="trailing" secondItem="ZzW-lv-9mn" secondAttribute="trailing" constant="10" id="c8g-ef-6at"/>
+                            <constraint firstItem="7iJ-QQ-Zp4" firstAttribute="top" secondItem="ubi-7o-pzj" secondAttribute="top" constant="10" id="dNy-ma-YB3"/>
+                            <constraint firstItem="ubi-7o-pzj" firstAttribute="bottom" secondItem="1Kq-nq-q5T" secondAttribute="bottom" id="dbC-wl-zhh"/>
+                            <constraint firstItem="1Kq-nq-q5T" firstAttribute="leading" secondItem="ubi-7o-pzj" secondAttribute="leading" id="eCS-3p-TRV"/>
+                            <constraint firstItem="1Kq-nq-q5T" firstAttribute="top" secondItem="ubi-7o-pzj" secondAttribute="top" id="ho5-wE-v2B"/>
+                            <constraint firstItem="aCw-uv-Rh7" firstAttribute="height" secondItem="QUY-Kd-bl1" secondAttribute="height" multiplier="1:5" id="m6I-v0-lyG"/>
+                            <constraint firstItem="gw1-zP-0bE" firstAttribute="top" secondItem="aCw-uv-Rh7" secondAttribute="bottom" id="pHP-Ac-HKW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ubi-7o-pzj"/>
+                    </view>
+                    <connections>
+                        <outlet property="gacya_btn" destination="yzk-DM-xQl" id="vve-LY-CaH"/>
+                        <outlet property="gacya_coin1" destination="ZzW-lv-9mn" id="ZkF-xL-HAr"/>
+                        <outlet property="gacya_coin2" destination="7iJ-QQ-Zp4" id="I8D-fi-Iju"/>
+                        <outlet property="gacya_coin3" destination="W1l-Yw-LIK" id="Iqi-u9-dMQ"/>
+                        <outlet property="gacya_flagView" destination="aCw-uv-Rh7" id="9zd-E4-Fmq"/>
+                        <outlet property="gacya_neko" destination="gw1-zP-0bE" id="bDI-FN-ddh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7r-be-RCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="-36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gacya_bg.png" width="1242" height="2208"/>
+        <image name="gacya_btn.png" width="749" height="306"/>
+        <image name="gacya_coin.png" width="109" height="155"/>
+        <image name="gacya_flag1.png" width="760" height="676"/>
+        <image name="gacya_neko1.png" width="1242" height="1560"/>
+    </resources>
+</document>

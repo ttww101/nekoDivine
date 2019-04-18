@@ -1,0 +1,28 @@
+PODS:
+  - JCore (1.2.6)
+  - JPush (3.1.2):
+    - JCore (~> 1.2.6)
+  - JSONModel (1.8.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - JPush
+  - JSONModel
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JCore
+    - JPush
+    - JSONModel
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 3190368fe841d120301252d2ce18c0ca2099ca84
+
+COCOAPODS: 1.6.1
